@@ -70,4 +70,3 @@ Then visit `http://127.0.0.1:5000` in your browser.
 
 * This is a learning project — it does not persist data between runs.
 * Make sure to use `POST` (not `GET`) for deletion to follow proper web practices.
-* The original lab was based on an IBM Developer Skills Network exercise.

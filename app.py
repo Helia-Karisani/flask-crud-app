@@ -52,12 +52,26 @@ def edit_transaction(transaction_id):
                 break
         return redirect(url_for('get_transactions'))
     # if the request method is GET, find the transaction by ID and display its current values in the form
-    for transation in transactions:
+    for transaction in transactions:
         if transaction['id'] == transaction_id:
             return render_template('edit.html', transaction=transaction)
     return {"message": "Transaction not found"}, 404
 
 # Delete operation
+@app.route("/delete/<int:transaction_id>", methods=['POST'])
+def delete_transaction(transaction_id):
+    # Find the transaction with the matching ID and remove it from the list
+    for transaction in transactions:
+        if transaction['id'] == transaction_id:
+            transactions.remove(transaction)  # Remove the transaction from the transactions list
+            break  # Exit the loop once the transaction is found and removed
+    # Redirect to the transactions list page after deleting the transaction
+    return redirect(url_for("get_transactions"))
 
 # Run the Flask app
+if __name__ == "__main__":
+    app.run(debug=True)
+# The app will run in debug mode, which is useful for development and debugging purposes
+# The debug mode will automatically reload the server when code changes are made
+# and will provide detailed error messages in the browser if any errors occur.
     

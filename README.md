@@ -1,6 +1,6 @@
 
 
-## 🧾 Flask CRUD App – Financial Transaction Manager
+## Flask CRUD App – Financial Transaction Manager
 
 This is a simple web application built with **Flask** that performs basic **CRUD operations** (Create, Read, Update, Delete) on a list of financial transactions.
 
@@ -8,7 +8,7 @@ It was developed as part of a hands-on lab to practice routing, request handling
 
 ---
 
-### ✅ Features
+### Features
 
 * **Create** new transactions with date and amount
 * **Read** and view all transactions in a tabular list
@@ -19,7 +19,7 @@ It was developed as part of a hands-on lab to practice routing, request handling
 
 ---
 
-### 🗂 Pages
+### Pages
 
 * `/` – View all transactions (Transaction Records)
 * `/add` – Add a new transaction
@@ -28,7 +28,7 @@ It was developed as part of a hands-on lab to practice routing, request handling
 
 ---
 
-### 🚀 Getting Started
+### Getting Started
 
 #### 1. Clone the repo:
 
@@ -53,7 +53,7 @@ Then visit `http://127.0.0.1:5000` in your browser.
 
 ---
 
-### 📁 Folder Structure
+### Folder Structure
 
 ```
 ├── app.py
@@ -66,7 +66,7 @@ Then visit `http://127.0.0.1:5000` in your browser.
 
 ---
 
-### 📌 Notes
+### Notes
 
 * This is a learning project — it does not persist data between runs.
 * Make sure to use `POST` (not `GET`) for deletion to follow proper web practices.

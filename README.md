@@ -15,7 +15,7 @@ It was developed as part of a hands-on lab to practice routing, request handling
 * **Update** any existing transaction
 * **Delete** transactions (using POST for safety)
 * Clean and styled frontend using Bootstrap
-* No database — data is stored in memory (list of dictionaries)
+* No database, data is stored in memory (list of dictionaries)
 
 ---
 
@@ -68,7 +68,7 @@ Then visit `http://127.0.0.1:5000` in your browser.
 
 ### Notes
 
-* This is a learning project — it does not persist data between runs.
+* This is a learning project, it does not persist data between runs.
 * Make sure to use `POST` (not `GET`) for deletion to follow proper web practices.
 
 
